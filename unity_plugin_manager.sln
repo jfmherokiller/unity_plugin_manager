@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginContract", "PluginContract\PluginContract.csproj", "{1DCEA408-2EAD-47FA-A3B8-2D6CC0225613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "main_loader", "MainLoader\main_loader.csproj", "{6F93EF90-FD60-4166-8BF3-D0490049BEA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Realhooks", "Realhooks\Realhooks.csproj", "{4C7D688A-4BF4-44C9-A3DF-441224B5102D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DCEA408-2EAD-47FA-A3B8-2D6CC0225613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DCEA408-2EAD-47FA-A3B8-2D6CC0225613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DCEA408-2EAD-47FA-A3B8-2D6CC0225613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DCEA408-2EAD-47FA-A3B8-2D6CC0225613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F93EF90-FD60-4166-8BF3-D0490049BEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F93EF90-FD60-4166-8BF3-D0490049BEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F93EF90-FD60-4166-8BF3-D0490049BEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F93EF90-FD60-4166-8BF3-D0490049BEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7D688A-4BF4-44C9-A3DF-441224B5102D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7D688A-4BF4-44C9-A3DF-441224B5102D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7D688A-4BF4-44C9-A3DF-441224B5102D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7D688A-4BF4-44C9-A3DF-441224B5102D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
