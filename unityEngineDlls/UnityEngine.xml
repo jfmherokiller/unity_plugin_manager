@@ -43,58 +43,6 @@
       <param name="menuName">The path to the component.</param>
       <param name="order">Where in the component menu to add the new item.</param>
     </member>
-    <member name="T:UnityEditor.Advertisements.AdvertisementSettings">
-      <summary>
-        <para>Editor API for the Unity Services editor feature. Normally UnityAds is enabled from the Services window, but if writing your own editor extension, this API can be used.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.Advertisements.AdvertisementSettings.enabled">
-      <summary>
-        <para>Global boolean for enabling or disabling the advertisement feature.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.Advertisements.AdvertisementSettings.initializeOnStartup">
-      <summary>
-        <para>Controls if the advertisement system should be initialized immediately on startup.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.Advertisements.AdvertisementSettings.testMode">
-      <summary>
-        <para>Controls if testing advertisements are used instead of production advertisements.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEditor.Advertisements.AdvertisementSettings.GetGameId(UnityEngine.RuntimePlatform)">
-      <summary>
-        <para>Gets the game identifier specified for a runtime platform.</para>
-      </summary>
-      <param name="platform"></param>
-      <returns>
-        <para>The platform specific game identifier.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEditor.Advertisements.AdvertisementSettings.IsPlatformEnabled(UnityEngine.RuntimePlatform)">
-      <summary>
-        <para>Returns if a specific platform is enabled.</para>
-      </summary>
-      <param name="platform"></param>
-      <returns>
-        <para>Boolean for the platform.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEditor.Advertisements.AdvertisementSettings.SetGameId(UnityEngine.RuntimePlatform,System.String)">
-      <summary>
-        <para>Sets the game identifier for the specified platform.</para>
-      </summary>
-      <param name="platform"></param>
-      <param name="gameId"></param>
-    </member>
-    <member name="M:UnityEditor.Advertisements.AdvertisementSettings.SetPlatformEnabled(UnityEngine.RuntimePlatform,System.Boolean)">
-      <summary>
-        <para>Enable the specific platform.</para>
-      </summary>
-      <param name="platform"></param>
-      <param name="value"></param>
-    </member>
     <member name="T:UnityEngine.Analytics.Analytics">
       <summary>
         <para>Unity Analytics provides insight into your game users e.g. DAU, MAU.</para>
@@ -229,67 +177,6 @@
       <summary>
         <para>The joint's anchor point on the second object (ie, the one which doesn't have the joint component).</para>
       </summary>
-    </member>
-    <member name="T:UnityEngine.AndroidActivityIndicatorStyle">
-      <summary>
-        <para>ActivityIndicator Style (Android Specific).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.AndroidActivityIndicatorStyle.DontShow">
-      <summary>
-        <para>Do not show ActivityIndicator.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.AndroidActivityIndicatorStyle.InversedLarge">
-      <summary>
-        <para>Large Inversed (android.R.attr.progressBarStyleLargeInverse).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.AndroidActivityIndicatorStyle.InversedSmall">
-      <summary>
-        <para>Small Inversed (android.R.attr.progressBarStyleSmallInverse).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.AndroidActivityIndicatorStyle.Large">
-      <summary>
-        <para>Large (android.R.attr.progressBarStyleLarge).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.AndroidActivityIndicatorStyle.Small">
-      <summary>
-        <para>Small (android.R.attr.progressBarStyleSmall).</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.AndroidInput">
-      <summary>
-        <para>AndroidInput provides support for off-screen touch input, such as a touchpad.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.AndroidInput.secondaryTouchEnabled">
-      <summary>
-        <para>Property indicating whether the system provides secondary touch input.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.AndroidInput.secondaryTouchHeight">
-      <summary>
-        <para>Property indicating the height of the secondary touchpad.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.AndroidInput.secondaryTouchWidth">
-      <summary>
-        <para>Property indicating the width of the secondary touchpad.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.AndroidInput.touchCountSecondary">
-      <summary>
-        <para>Number of secondary touches. Guaranteed not to change throughout the frame. (Read Only).</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.AndroidInput.GetSecondaryTouch(System.Int32)">
-      <summary>
-        <para>Returns object representing status of a specific touch on a secondary touchpad (Does not allocate temporary variables).</para>
-      </summary>
-      <param name="index"></param>
     </member>
     <member name="T:UnityEngine.AndroidJavaClass">
       <summary>
@@ -2185,21 +2072,6 @@ If relativePath is empty it refers to the game object the animation clip is atta
         <para>Creates a new animation event.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.AnimationInfo">
-      <summary>
-        <para>Information about what animation clips is played and its weight.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.AnimationInfo.clip">
-      <summary>
-        <para>Animation clip that is played.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.AnimationInfo.weight">
-      <summary>
-        <para>The weight of the animation clip.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.AnimationState">
       <summary>
         <para>The AnimationState gives full control over animation blending.</para>
@@ -2566,12 +2438,6 @@ If relativePath is empty it refers to the game object the animation clip is atta
       <param name="name"></param>
       <param name="id"></param>
     </member>
-    <member name="M:UnityEngine.Animator.GetCurrentAnimationClipState(System.Int32)">
-      <summary>
-        <para>Gets the list of AnimatorClipInfo currently played by the current state.</para>
-      </summary>
-      <param name="layerIndex">The layer's index.</param>
-    </member>
     <member name="M:UnityEngine.Animator.GetCurrentAnimatorClipInfo(System.Int32)">
       <summary>
         <para>See IAnimatorControllerPlayable.GetCurrentAnimatorClipInfo.</para>
@@ -2674,12 +2540,6 @@ If relativePath is empty it refers to the game object the animation clip is atta
         <para>See IAnimatorControllerPlayable.GetLayerWeight.</para>
       </summary>
       <param name="layerIndex"></param>
-    </member>
-    <member name="M:UnityEngine.Animator.GetNextAnimationClipState(System.Int32)">
-      <summary>
-        <para>Gets the list of AnimatorClipInfo currently played by the next state.</para>
-      </summary>
-      <param name="layerIndex">The layer's index.</param>
     </member>
     <member name="M:UnityEngine.Animator.GetNextAnimatorClipInfo(System.Int32)">
       <summary>
@@ -3400,153 +3260,6 @@ If relativePath is empty it refers to the game object the animation clip is atta
     <member name="F:UnityEngine.AnisotropicFiltering.ForceEnable">
       <summary>
         <para>Enable anisotropic filtering for all textures.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Apple.ReplayKit.ReplayKit">
-      <summary>
-        <para>ReplayKit is only available on iPhoneiPadiPod Touch running iOS 9.0 or later.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.broadcastingAPIAvailable">
-      <summary>
-        <para>A Boolean that indicates whether ReplayKit broadcasting API is available (true means available) (Read Only).
-Check the value of this property before making ReplayKit broadcasting API calls. On iOS versions prior to iOS 10, this property will have a value of false.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.broadcastURL">
-      <summary>
-        <para>A string property that contains an URL used to redirect the user to an on-going or completed broadcast (Read Only).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.cameraEnabled">
-      <summary>
-        <para>Camera enabled status, true, if camera enabled, false otherwise.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.isBroadcasting">
-      <summary>
-        <para>Boolean property that indicates whether a broadcast is currently in progress (Read Only).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.isRecording">
-      <summary>
-        <para>A boolean that indicates whether ReplayKit is making a recording (where True means a recording is in progress). (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.lastError">
-      <summary>
-        <para>A string value of the last error incurred by the ReplayKit: Either 'Failed to get Screen Recorder' or 'No recording available'. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.microphoneEnabled">
-      <summary>
-        <para>Microphone enabled status, true, if microhone enabled, false otherwise.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.recordingAvailable">
-      <summary>
-        <para>A boolean value that indicates that a new recording is available for preview (where True means available). (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.APIAvailable">
-      <summary>
-        <para>A boolean that indicates whether the ReplayKit API is available (where True means available). (Read Only)</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Apple.ReplayKit.ReplayKit.BroadcastStatusCallback">
-      <summary>
-        <para>Function called at the completion of broadcast startup.</para>
-      </summary>
-      <param name="hasStarted">This parameter will be true if the broadcast started successfully and false in the event of an error.</param>
-      <param name="errorMessage">In the event of failure to start a broadcast, this parameter contains the associated error message.</param>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.Discard">
-      <summary>
-        <para>Discard the current recording.</para>
-      </summary>
-      <returns>
-        <para>A boolean value of True if the recording was discarded successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.HideCameraPreview">
-      <summary>
-        <para>Hide the camera preview view.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.Preview">
-      <summary>
-        <para>Preview the current recording</para>
-      </summary>
-      <returns>
-        <para>A boolean value of True if the video preview window opened successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.ShowCameraPreviewAt(System.Single,System.Single)">
-      <summary>
-        <para>Shows camera preview at coordinates posX and posY.</para>
-      </summary>
-      <param name="posX"></param>
-      <param name="posY"></param>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StartBroadcasting">
-      <summary>
-        <para>Initiates and starts a new broadcast
-When StartBroadcast is called, user is presented with a broadcast provider selection screen, and then a broadcast setup screen. Once it is finished, a broadcast will be started, and the callback will be invoked.
-It will also be invoked in case of any error.
-        </para>
-      </summary>
-      <param name="callback">A callback for getting the status of broadcast initiation.</param>
-      <param name="enableMicrophone">Enable or disable the microphone while broadcasting. Enabling the microphone allows you to include user commentary while broadcasting. The default value is false.</param>
-      <param name="enableCamera">Enable or disable the camera while broadcasting. Enabling camera allows you to include user camera footage while broadcasting. The default value is false. To actually include camera footage in your broadcast, you also have to call ShowCameraPreviewAt as well to position the preview view.</param>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StartRecording(System.Boolean,System.Boolean)">
-      <summary>
-        <para>Start a new recording.</para>
-      </summary>
-      <param name="enableMicrophone">Enable or disable the microphone while making a recording. Enabling the microphone allows you to include user commentary while recording. The default value is false.</param>
-      <param name="enableCamera">Enable or disable the camera while making a recording. Enabling camera allows you to include user camera footage while recording. The default value is false. To actually include camera footage in your recording, you also have to call ShowCameraPreviewAt as well to position the preview view.</param>
-      <returns>
-        <para>A boolean value of True if recording started successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StopBroadcasting">
-      <summary>
-        <para>Stops current broadcast. 
-Will terminate currently on-going broadcast. If no broadcast is in progress, does nothing.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StopRecording">
-      <summary>
-        <para>Stop the current recording.</para>
-      </summary>
-      <returns>
-        <para>A boolean value of True if recording stopped successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="T:UnityEngine.Apple.TV.Remote">
-      <summary>
-        <para>A class for Apple TV remote input configuration.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.allowExitToHome">
-      <summary>
-        <para>Configures how "Menu" button behaves on Apple TV Remote. If this property is set to true hitting "Menu" on Remote will exit to system home screen. When this property is false current application is responsible for handling "Menu" button. It is recommended to set this property to true on top level menus of your application.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.allowRemoteRotation">
-      <summary>
-        <para>Configures if Apple TV Remote should autorotate all the inputs when Remote is being held in horizontal orientation. Default is false.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.reportAbsoluteDpadValues">
-      <summary>
-        <para>Configures how touches are mapped to analog joystick axes in relative or absolute values. If set to true it will return +1 on Horizontal axis when very far right is being touched on Remote touch aread (and -1 when very left area is touched correspondingly). The same applies for Vertical axis too. When this property is set to false player should swipe instead of touching specific area of remote to generate Horizontal or Vertical input.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.touchesEnabled">
-      <summary>
-        <para>Disables Apple TV Remote touch propagation to Unity Input.touches API. Useful for 3rd party frameworks, which do not respect Touch.type == Indirect.
-Default is false.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.Application">
@@ -4504,26 +4217,6 @@ Note: Every time you call the method with tolerance specified, a new instance of
         <para>Check if an AssetBundle contains a specific object.</para>
       </summary>
       <param name="name"></param>
-    </member>
-    <member name="M:UnityEngine.AssetBundle.CreateFromFile(System.String)">
-      <summary>
-        <para>Loads an asset bundle from a disk.</para>
-      </summary>
-      <param name="path">Path of the file on disk
-
-See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
-    </member>
-    <member name="M:UnityEngine.AssetBundle.CreateFromMemory(System.Byte[])">
-      <summary>
-        <para>Asynchronously create an AssetBundle from a memory region.</para>
-      </summary>
-      <param name="binary"></param>
-    </member>
-    <member name="M:UnityEngine.AssetBundle.CreateFromMemoryImmediate(System.Byte[])">
-      <summary>
-        <para>Synchronously create an AssetBundle from a memory region.</para>
-      </summary>
-      <param name="binary">Array of bytes with the AssetBundle data.</param>
     </member>
     <member name="M:UnityEngine.AssetBundle.GetAllAssetNames">
       <summary>
@@ -5841,16 +5534,6 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
         <para>The target group to which the AudioSource should route its signal.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.AudioSource.pan">
-      <summary>
-        <para>Pan has been deprecated. Use panStereo instead.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.AudioSource.panLevel">
-      <summary>
-        <para>PanLevel has been deprecated. Use spatialBlend instead.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.AudioSource.panStereo">
       <summary>
         <para>Pans a playing sound in a stereo way (left or right). This only applies to sounds that are Mono or Stereo.</para>
@@ -6767,11 +6450,6 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
         <para>Collider for 2D physics representing an axis-aligned rectangle.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.BoxCollider2D.center">
-      <summary>
-        <para>The center point of the collider in local space.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.BoxCollider2D.size">
       <summary>
         <para>The width and height of the rectangle.</para>
@@ -7681,12 +7359,6 @@ See Also: CanvasRenderer.EnableRectClipping, CanvasRenderer.DisableRectClipping.
         <para>The number of materials usable by this renderer.</para>
       </summary>
     </member>
-    <member name="?:UnityEngine.CanvasRenderer.onRequestRebuild(UnityEngine.CanvasRenderer/OnRequestRebuild)">
-      <summary>
-        <para>(Editor Only) Event that gets fired whenever the data in the CanvasRenderer gets invalidated and needs to be rebuilt.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
     <member name="P:UnityEngine.CanvasRenderer.popMaterialCount">
       <summary>
         <para>The number of materials usable by this renderer. Used internally for masking.</para>
@@ -8110,11 +7782,6 @@ See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.</para>
     <member name="T:UnityEngine.CircleCollider2D">
       <summary>
         <para>Collider for 2D physics representing an circle.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.CircleCollider2D.center">
-      <summary>
-        <para>The center point of the collider in local space.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.CircleCollider2D.radius">
@@ -9205,89 +8872,9 @@ See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.</para>
         <para>Base class for everything attached to GameObjects.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.Component.animation">
-      <summary>
-        <para>The Animation attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.audio">
-      <summary>
-        <para>The AudioSource attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.camera">
-      <summary>
-        <para>The Camera attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.collider">
-      <summary>
-        <para>The Collider attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.collider2D">
-      <summary>
-        <para>The Collider2D component attached to the object.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.constantForce">
-      <summary>
-        <para>The ConstantForce attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.Component.gameObject">
       <summary>
         <para>The game object this component is attached to. A component is always attached to a game object.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.guiText">
-      <summary>
-        <para>The GUIText attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.guiTexture">
-      <summary>
-        <para>The GUITexture attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.hingeJoint">
-      <summary>
-        <para>The HingeJoint attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.light">
-      <summary>
-        <para>The Light attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.networkView">
-      <summary>
-        <para>The NetworkView attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.particleEmitter">
-      <summary>
-        <para>The ParticleEmitter attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.particleSystem">
-      <summary>
-        <para>The ParticleSystem attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.renderer">
-      <summary>
-        <para>The Renderer attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.rigidbody">
-      <summary>
-        <para>The Rigidbody attached to this GameObject (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Component.rigidbody2D">
-      <summary>
-        <para>The Rigidbody2D that is attached to the Component's GameObject.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Component.tag">
@@ -13723,56 +13310,6 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
         <para>The maximum torque that can be generated when trying to maintain the friction joint constraint.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.FullScreenMovieControlMode">
-      <summary>
-        <para>Describes options for displaying movie playback controls.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieControlMode.CancelOnInput">
-      <summary>
-        <para>Do not display any controls, but cancel movie playback if input occurs.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieControlMode.Full">
-      <summary>
-        <para>Display the standard controls for controlling movie playback.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieControlMode.Hidden">
-      <summary>
-        <para>Do not display any controls.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieControlMode.Minimal">
-      <summary>
-        <para>Display minimal set of controls controlling movie playback.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.FullScreenMovieScalingMode">
-      <summary>
-        <para>Describes scaling modes for displaying movies.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieScalingMode.AspectFill">
-      <summary>
-        <para>Scale the movie until the movie fills the entire screen.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieScalingMode.AspectFit">
-      <summary>
-        <para>Scale the movie until one dimension fits on the screen exactly.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieScalingMode.Fill">
-      <summary>
-        <para>Scale the movie until both dimensions fit the screen exactly.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.FullScreenMovieScalingMode.None">
-      <summary>
-        <para>Do not scale the movie.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.GameObject">
       <summary>
         <para>Base class for all entities in Unity scenes.</para>
@@ -13788,51 +13325,6 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
         <para>The local active state of this GameObject. (Read Only)</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.GameObject.animation">
-      <summary>
-        <para>The Animation attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.audio">
-      <summary>
-        <para>The AudioSource attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.camera">
-      <summary>
-        <para>The Camera attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.collider">
-      <summary>
-        <para>The Collider attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.collider2D">
-      <summary>
-        <para>The Collider2D component attached to this object.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.constantForce">
-      <summary>
-        <para>The ConstantForce attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.guiText">
-      <summary>
-        <para>The GUIText attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.guiTexture">
-      <summary>
-        <para>The GUITexture attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.hingeJoint">
-      <summary>
-        <para>The HingeJoint attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.GameObject.isStatic">
       <summary>
         <para>Editor only API that specifies if a game object is static.</para>
@@ -13841,41 +13333,6 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
     <member name="P:UnityEngine.GameObject.layer">
       <summary>
         <para>The layer the game object is in. A layer is in the range [0...31].</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.light">
-      <summary>
-        <para>The Light attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.networkView">
-      <summary>
-        <para>The NetworkView attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.particleEmitter">
-      <summary>
-        <para>The ParticleEmitter attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.particleSystem">
-      <summary>
-        <para>The ParticleSystem attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.renderer">
-      <summary>
-        <para>The Renderer attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.rigidbody">
-      <summary>
-        <para>The Rigidbody attached to this GameObject (Read Only). (null if there is none attached).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.GameObject.rigidbody2D">
-      <summary>
-        <para>The Rigidbody2D component attached to this GameObject. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.GameObject.scene">
@@ -19324,11 +18781,6 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
         <para>The background image used by GUI elements in this given state.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.GUIStyleState.scaledBackgrounds">
-      <summary>
-        <para>Background images used by this state when on a high-resolution screen. It should either be left empty, or contain a single image that is exactly twice the resolution of background. This is only used by the editor. The field is not copied to player data, and is not accessible from player code.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.GUIStyleState.textColor">
       <summary>
         <para>The text color used by GUI elements in this state.</para>
@@ -19610,90 +19062,6 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     <member name="P:UnityEngine.Gyroscope.userAcceleration">
       <summary>
         <para>Returns the acceleration that the user is giving to the device.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Handheld">
-      <summary>
-        <para>Interface into functionality unique to handheld devices.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Handheld.use32BitDisplayBuffer">
-      <summary>
-        <para>Determines whether or not a 32-bit display buffer will be used.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Handheld.GetActivityIndicatorStyle">
-      <summary>
-        <para>Gets the current activity indicator style.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Handheld.PlayFullScreenMovie(System.String)">
-      <summary>
-        <para>Plays a full-screen movie.</para>
-      </summary>
-      <param name="path">Filesystem path to the movie file.</param>
-      <param name="bgColor">Background color.</param>
-      <param name="controlMode">How the playback controls are to be displayed.</param>
-      <param name="scalingMode">How the movie is to be scaled to fit the screen.</param>
-    </member>
-    <member name="M:UnityEngine.Handheld.PlayFullScreenMovie(System.String,UnityEngine.Color)">
-      <summary>
-        <para>Plays a full-screen movie.</para>
-      </summary>
-      <param name="path">Filesystem path to the movie file.</param>
-      <param name="bgColor">Background color.</param>
-      <param name="controlMode">How the playback controls are to be displayed.</param>
-      <param name="scalingMode">How the movie is to be scaled to fit the screen.</param>
-    </member>
-    <member name="M:UnityEngine.Handheld.PlayFullScreenMovie(System.String,UnityEngine.Color,UnityEngine.FullScreenMovieControlMode)">
-      <summary>
-        <para>Plays a full-screen movie.</para>
-      </summary>
-      <param name="path">Filesystem path to the movie file.</param>
-      <param name="bgColor">Background color.</param>
-      <param name="controlMode">How the playback controls are to be displayed.</param>
-      <param name="scalingMode">How the movie is to be scaled to fit the screen.</param>
-    </member>
-    <member name="M:UnityEngine.Handheld.PlayFullScreenMovie(System.String,UnityEngine.Color,UnityEngine.FullScreenMovieControlMode,UnityEngine.FullScreenMovieScalingMode)">
-      <summary>
-        <para>Plays a full-screen movie.</para>
-      </summary>
-      <param name="path">Filesystem path to the movie file.</param>
-      <param name="bgColor">Background color.</param>
-      <param name="controlMode">How the playback controls are to be displayed.</param>
-      <param name="scalingMode">How the movie is to be scaled to fit the screen.</param>
-    </member>
-    <member name="M:UnityEngine.Handheld.SetActivityIndicatorStyle">
-      <summary>
-        <para>Sets the desired activity indicator style.</para>
-      </summary>
-      <param name="style"></param>
-    </member>
-    <member name="M:UnityEngine.Handheld.SetActivityIndicatorStyle(UnityEngine.AndroidActivityIndicatorStyle)">
-      <summary>
-        <para>Sets the desired activity indicator style.</para>
-      </summary>
-      <param name="style"></param>
-    </member>
-    <member name="M:UnityEngine.Handheld.SetActivityIndicatorStyle(UnityEngine.TizenActivityIndicatorStyle)">
-      <summary>
-        <para>Sets the desired activity indicator style.</para>
-      </summary>
-      <param name="style"></param>
-    </member>
-    <member name="M:UnityEngine.Handheld.StartActivityIndicator">
-      <summary>
-        <para>Starts os activity indicator.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Handheld.StopActivityIndicator">
-      <summary>
-        <para>Stops os activity indicator.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Handheld.Vibrate">
-      <summary>
-        <para>Triggers device vibration.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.Hash128">
@@ -20955,859 +20323,9 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       </summary>
       <param name="index"></param>
     </member>
-    <member name="M:UnityEngine.Input.IsJoystickPreconfigured(System.String)">
-      <summary>
-        <para>Determine whether a particular joystick model has been preconfigured by Unity. (Linux-only).</para>
-      </summary>
-      <param name="joystickName">The name of the joystick to check (returned by Input.GetJoystickNames).</param>
-      <returns>
-        <para>True if the joystick layout has been preconfigured; false otherwise.</para>
-      </returns>
-    </member>
     <member name="M:UnityEngine.Input.ResetInputAxes">
       <summary>
         <para>Resets all input. After ResetInputAxes all axes return to 0 and all buttons return to 0 for one frame.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ActivityIndicatorStyle">
-      <summary>
-        <para>ActivityIndicator Style (iOS Specific).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.DontShow">
-      <summary>
-        <para>Do not show ActivityIndicator.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.Gray">
-      <summary>
-        <para>The standard gray style of indicator (UIActivityIndicatorViewStyleGray).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.White">
-      <summary>
-        <para>The standard white style of indicator (UIActivityIndicatorViewStyleWhite).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.WhiteLarge">
-      <summary>
-        <para>The large white style of indicator (UIActivityIndicatorViewStyleWhiteLarge).</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView">
-      <summary>
-        <para>ADBannerView is a wrapper around the ADBannerView class found in the Apple iAd framework and is only available on iOS.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.layout">
-      <summary>
-        <para>Banner layout.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.loaded">
-      <summary>
-        <para>Checks if banner contents are loaded.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.position">
-      <summary>
-        <para>The position of the banner view.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.size">
-      <summary>
-        <para>The size of the banner view.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.visible">
-      <summary>
-        <para>Banner visibility. Initially banner is not visible.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.BannerFailedToLoadDelegate">
-      <summary>
-        <para>Will be fired when banner ad failed to load.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.BannerWasClickedDelegate">
-      <summary>
-        <para>Will be fired when banner was clicked.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.BannerWasLoadedDelegate">
-      <summary>
-        <para>Will be fired when banner loaded new ad.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADBannerView.#ctor(UnityEngine.iOS.ADBannerView/Type,UnityEngine.iOS.ADBannerView/Layout)">
-      <summary>
-        <para>Creates a banner view with given type and auto-layout params.</para>
-      </summary>
-      <param name="type"></param>
-      <param name="layout"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.ADBannerView.IsAvailable(UnityEngine.iOS.ADBannerView/Type)">
-      <summary>
-        <para>Checks if the banner type is available (e.g. MediumRect is available only starting with ios6).</para>
-      </summary>
-      <param name="type"></param>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.Layout">
-      <summary>
-        <para>Specifies how banner should be layed out on screen.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Bottom">
-      <summary>
-        <para>Traditional Banner: align to screen bottom.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.BottomCenter">
-      <summary>
-        <para>Rect Banner: align to screen bottom, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.BottomLeft">
-      <summary>
-        <para>Rect Banner: place in bottom-left corner.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.BottomRight">
-      <summary>
-        <para>Rect Banner: place in bottom-right corner.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Center">
-      <summary>
-        <para>Rect Banner: place exactly at screen center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.CenterLeft">
-      <summary>
-        <para>Rect Banner: align to screen left, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.CenterRight">
-      <summary>
-        <para>Rect Banner: align to screen right, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Manual">
-      <summary>
-        <para>Completely manual positioning.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Top">
-      <summary>
-        <para>Traditional Banner: align to screen top.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.TopCenter">
-      <summary>
-        <para>Rect Banner: align to screen top, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.TopLeft">
-      <summary>
-        <para>Rect Banner: place in top-left corner.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.TopRight">
-      <summary>
-        <para>Rect Banner: place in top-right corner.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.Type">
-      <summary>
-        <para>The type of the banner view.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Type.Banner">
-      <summary>
-        <para>Traditional Banner (it takes full screen width).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Type.MediumRect">
-      <summary>
-        <para>Rect Banner (300x250).</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADInterstitialAd">
-      <summary>
-        <para>ADInterstitialAd is a wrapper around the ADInterstitialAd class found in the Apple iAd framework and is only available on iPad.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADInterstitialAd.isAvailable">
-      <summary>
-        <para>Checks if InterstitialAd is available (it is available on iPad since iOS 4.3, and on iPhone since iOS 7.0).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADInterstitialAd.loaded">
-      <summary>
-        <para>Has the interstitial ad object downloaded an advertisement? (Read Only)</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.#ctor">
-      <summary>
-        <para>Creates an interstitial ad.</para>
-      </summary>
-      <param name="autoReload"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.#ctor(System.Boolean)">
-      <summary>
-        <para>Creates an interstitial ad.</para>
-      </summary>
-      <param name="autoReload"></param>
-    </member>
-    <member name="T:UnityEngine.iOS.ADInterstitialAd.InterstitialWasLoadedDelegate">
-      <summary>
-        <para>Will be called when ad is ready to be shown.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADInterstitialAd.InterstitialWasViewedDelegate">
-      <summary>
-        <para>Will be called when user viewed ad contents: i.e. they went past the initial screen. Please note that it is impossible to determine if they clicked on any links in ad sequences that follows the initial screen.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.ReloadAd">
-      <summary>
-        <para>Reload advertisement.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.Show">
-      <summary>
-        <para>Shows full-screen advertisement to user.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.CalendarIdentifier">
-      <summary>
-        <para>Specify calendar types.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.BuddhistCalendar">
-      <summary>
-        <para>Identifies the Buddhist calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.ChineseCalendar">
-      <summary>
-        <para>Identifies the Chinese calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.GregorianCalendar">
-      <summary>
-        <para>Identifies the Gregorian calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.HebrewCalendar">
-      <summary>
-        <para>Identifies the Hebrew calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.IndianCalendar">
-      <summary>
-        <para>Identifies the Indian calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.IslamicCalendar">
-      <summary>
-        <para>Identifies the Islamic calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.IslamicCivilCalendar">
-      <summary>
-        <para>Identifies the Islamic civil calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.ISO8601Calendar">
-      <summary>
-        <para>Identifies the ISO8601.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.JapaneseCalendar">
-      <summary>
-        <para>Identifies the Japanese calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.PersianCalendar">
-      <summary>
-        <para>Identifies the Persian calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.RepublicOfChinaCalendar">
-      <summary>
-        <para>Identifies the Republic of China (Taiwan) calendar.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.CalendarUnit">
-      <summary>
-        <para>Specify calendrical units.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Day">
-      <summary>
-        <para>Specifies the day unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Era">
-      <summary>
-        <para>Specifies the era unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Hour">
-      <summary>
-        <para>Specifies the hour unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Minute">
-      <summary>
-        <para>Specifies the minute unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Month">
-      <summary>
-        <para>Specifies the month unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Quarter">
-      <summary>
-        <para>Specifies the quarter of the calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Second">
-      <summary>
-        <para>Specifies the second unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Week">
-      <summary>
-        <para>Specifies the week unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Weekday">
-      <summary>
-        <para>Specifies the weekday unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.WeekdayOrdinal">
-      <summary>
-        <para>Specifies the ordinal weekday unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Year">
-      <summary>
-        <para>Specifies the year unit.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.Device">
-      <summary>
-        <para>Interface into iOS specific functionality.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.advertisingIdentifier">
-      <summary>
-        <para>Advertising ID.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.advertisingTrackingEnabled">
-      <summary>
-        <para>Is advertising tracking enabled.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.generation">
-      <summary>
-        <para>The generation of the device. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.systemVersion">
-      <summary>
-        <para>iOS version.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.vendorIdentifier">
-      <summary>
-        <para>Vendor ID.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.Device.ResetNoBackupFlag(System.String)">
-      <summary>
-        <para>Reset "no backup" file flag: file will be synced with iCloud/iTunes backup and can be deleted by OS in low storage situations.</para>
-      </summary>
-      <param name="path"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.Device.SetNoBackupFlag(System.String)">
-      <summary>
-        <para>Set file flag to be excluded from iCloud/iTunes backup.</para>
-      </summary>
-      <param name="path"></param>
-    </member>
-    <member name="T:UnityEngine.iOS.DeviceGeneration">
-      <summary>
-        <para>iOS device generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad1Gen">
-      <summary>
-        <para>iPad, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad2Gen">
-      <summary>
-        <para>iPad, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad3Gen">
-      <summary>
-        <para>iPad, third generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad4Gen">
-      <summary>
-        <para>iPad, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad5Gen">
-      <summary>
-        <para>iPad Air, fifth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadAir1">
-      <summary>
-        <para>iPad Air.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadAir2">
-      <summary>
-        <para>iPad Air 2.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini1Gen">
-      <summary>
-        <para>iPadMini, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini2Gen">
-      <summary>
-        <para>iPadMini Retina, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini3Gen">
-      <summary>
-        <para>iPad Mini 3.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini4Gen">
-      <summary>
-        <para>iPad Mini, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadPro10Inch1Gen">
-      <summary>
-        <para>iPad Pro 9.7", first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadPro1Gen">
-      <summary>
-        <para>iPad Pro, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadUnknown">
-      <summary>
-        <para>Yet unknown iPad.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone">
-      <summary>
-        <para>iPhone, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone3G">
-      <summary>
-        <para>iPhone, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone3GS">
-      <summary>
-        <para>iPhone, third generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone4">
-      <summary>
-        <para>iPhone, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone4S">
-      <summary>
-        <para>iPhone, fifth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone5">
-      <summary>
-        <para>iPhone5.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone5C">
-      <summary>
-        <para>iPhone 5C.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone5S">
-      <summary>
-        <para>iPhone 5S.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6">
-      <summary>
-        <para>iPhone 6.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6Plus">
-      <summary>
-        <para>iPhone 6 plus.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6S">
-      <summary>
-        <para>iPhone 6S.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6SPlus">
-      <summary>
-        <para>iPhone 6S Plus.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone7">
-      <summary>
-        <para>iPhone 7.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone7Plus">
-      <summary>
-        <para>iPhone 7 Plus.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneSE1Gen">
-      <summary>
-        <para>iPhone SE, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneUnknown">
-      <summary>
-        <para>Yet unknown iPhone.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch1Gen">
-      <summary>
-        <para>iPod Touch, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch2Gen">
-      <summary>
-        <para>iPod Touch, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch3Gen">
-      <summary>
-        <para>iPod Touch, third generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch4Gen">
-      <summary>
-        <para>iPod Touch, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch5Gen">
-      <summary>
-        <para>iPod Touch, fifth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch6Gen">
-      <summary>
-        <para>iPod Touch, sixth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouchUnknown">
-      <summary>
-        <para>Yet unknown iPod Touch.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.LocalNotification">
-      <summary>
-        <para>iOS.LocalNotification is a wrapper around the UILocalNotification class found in the Apple UIKit framework and is only available on iPhoneiPadiPod Touch.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.alertAction">
-      <summary>
-        <para>The title of the action button or slider.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.alertBody">
-      <summary>
-        <para>The message displayed in the notification alert.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.alertLaunchImage">
-      <summary>
-        <para>Identifies the image used as the launch image when the user taps the action button.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.applicationIconBadgeNumber">
-      <summary>
-        <para>The number to display as the application's icon badge.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.defaultSoundName">
-      <summary>
-        <para>The default system sound. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.fireDate">
-      <summary>
-        <para>The date and time when the system should deliver the notification.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.hasAction">
-      <summary>
-        <para>A boolean value that controls whether the alert action is visible or not.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.repeatCalendar">
-      <summary>
-        <para>The calendar type (Gregorian, Chinese, etc) to use for rescheduling the notification.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.repeatInterval">
-      <summary>
-        <para>The calendar interval at which to reschedule the notification.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.soundName">
-      <summary>
-        <para>The name of the sound file to play when an alert is displayed.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.timeZone">
-      <summary>
-        <para>The time zone of the notification's fire date.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.userInfo">
-      <summary>
-        <para>A dictionary for passing custom information to the notified application.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.LocalNotification.#ctor">
-      <summary>
-        <para>Creates a new local notification.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.NotificationServices">
-      <summary>
-        <para>NotificationServices is only available on iPhoneiPadiPod Touch.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.deviceToken">
-      <summary>
-        <para>Device token received from Apple Push Service after calling NotificationServices.RegisterForRemoteNotificationTypes. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.enabledNotificationTypes">
-      <summary>
-        <para>Enabled local and remote notification types.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.localNotificationCount">
-      <summary>
-        <para>The number of received local notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.localNotifications">
-      <summary>
-        <para>The list of objects representing received local notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.registrationError">
-      <summary>
-        <para>Returns an error that might occur on registration for remote notifications via NotificationServices.RegisterForRemoteNotificationTypes. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.remoteNotificationCount">
-      <summary>
-        <para>The number of received remote notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.remoteNotifications">
-      <summary>
-        <para>The list of objects representing received remote notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.scheduledLocalNotifications">
-      <summary>
-        <para>All currently scheduled local notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.CancelAllLocalNotifications">
-      <summary>
-        <para>Cancels the delivery of all scheduled local notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.CancelLocalNotification(UnityEngine.iOS.LocalNotification)">
-      <summary>
-        <para>Cancels the delivery of the specified scheduled local notification.</para>
-      </summary>
-      <param name="notification"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.ClearLocalNotifications">
-      <summary>
-        <para>Discards of all received local notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.ClearRemoteNotifications">
-      <summary>
-        <para>Discards of all received remote notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.GetLocalNotification(System.Int32)">
-      <summary>
-        <para>Returns an object representing a specific local notification. (Read Only)</para>
-      </summary>
-      <param name="index"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.GetRemoteNotification(System.Int32)">
-      <summary>
-        <para>Returns an object representing a specific remote notification. (Read Only)</para>
-      </summary>
-      <param name="index"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.PresentLocalNotificationNow(UnityEngine.iOS.LocalNotification)">
-      <summary>
-        <para>Presents a local notification immediately.</para>
-      </summary>
-      <param name="notification"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.RegisterForNotifications(UnityEngine.iOS.NotificationType)">
-      <summary>
-        <para>Register to receive local and remote notifications of the specified types from a provider via Apple Push Service.</para>
-      </summary>
-      <param name="notificationTypes">Notification types to register for.</param>
-      <param name="registerForRemote">Specify true to also register for remote notifications.</param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.RegisterForNotifications(UnityEngine.iOS.NotificationType,System.Boolean)">
-      <summary>
-        <para>Register to receive local and remote notifications of the specified types from a provider via Apple Push Service.</para>
-      </summary>
-      <param name="notificationTypes">Notification types to register for.</param>
-      <param name="registerForRemote">Specify true to also register for remote notifications.</param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.ScheduleLocalNotification(UnityEngine.iOS.LocalNotification)">
-      <summary>
-        <para>Schedules a local notification.</para>
-      </summary>
-      <param name="notification"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.UnregisterForRemoteNotifications">
-      <summary>
-        <para>Unregister for remote notifications.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.NotificationType">
-      <summary>
-        <para>Specifies local and remote notification types.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.Alert">
-      <summary>
-        <para>Notification is an alert message.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.Badge">
-      <summary>
-        <para>Notification is a badge shown above the application's icon.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.None">
-      <summary>
-        <para>No notification types specified.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.Sound">
-      <summary>
-        <para>Notification is an alert sound.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.OnDemandResources">
-      <summary>
-        <para>On Demand Resources API.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.OnDemandResources.enabled">
-      <summary>
-        <para>Indicates whether player was built with "Use On Demand Resources" player setting enabled.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.OnDemandResources.PreloadAsync(System.String[])">
-      <summary>
-        <para>Creates an On Demand Resources (ODR) request.</para>
-      </summary>
-      <param name="tags">Tags for On Demand Resources that should be included in the request.</param>
-      <returns>
-        <para>Object representing ODR request.</para>
-      </returns>
-    </member>
-    <member name="T:UnityEngine.iOS.OnDemandResourcesRequest">
-      <summary>
-        <para>Represents a request for On Demand Resources (ODR). It's an AsyncOperation and can be yielded in a coroutine.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.OnDemandResourcesRequest.error">
-      <summary>
-        <para>Returns an error after operation is complete.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.OnDemandResourcesRequest.loadingPriority">
-      <summary>
-        <para>Sets the priority for request.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.OnDemandResourcesRequest.Dispose">
-      <summary>
-        <para>Release all resources kept alive by On Demand Resources (ODR) request.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.OnDemandResourcesRequest.GetResourcePath(System.String)">
-      <summary>
-        <para>Gets file system's path to the resource available in On Demand Resources (ODR) request.</para>
-      </summary>
-      <param name="resourceName">Resource name.</param>
-    </member>
-    <member name="T:UnityEngine.iOS.RemoteNotification">
-      <summary>
-        <para>RemoteNotification is only available on iPhoneiPadiPod Touch.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.alertBody">
-      <summary>
-        <para>The message displayed in the notification alert. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.applicationIconBadgeNumber">
-      <summary>
-        <para>The number to display as the application's icon badge. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.hasAction">
-      <summary>
-        <para>A boolean value that controls whether the alert action is visible or not. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.soundName">
-      <summary>
-        <para>The name of the sound file to play when an alert is displayed. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.userInfo">
-      <summary>
-        <para>A dictionary for passing custom information to the notified application. (Read Only)</para>
       </summary>
     </member>
     <member name="?:UnityEngine.ISerializationCallbackReceiver">
@@ -21888,11 +20406,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     <member name="P:UnityEngine.Joint2D.breakTorque">
       <summary>
         <para>The torque that needs to be applied for this joint to break.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Joint2D.collideConnected">
-      <summary>
-        <para>Can the joint collide with the other Rigidbody2D object to which it is attached?</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Joint2D.connectedBody">
@@ -23967,11 +22480,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     <member name="T:UnityEngine.Light">
       <summary>
         <para>Script interface for.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Light.areaSize">
-      <summary>
-        <para>The size of the area light. Editor only.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Light.bakedIndex">
@@ -33597,11 +32105,6 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
         <para>The scale of the contact arrow used by the collider gizmos.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.Physics2D.deleteStopsCallbacks">
-      <summary>
-        <para>Whether to stop processing collision callbacks if any of the objects involved in the collision are deleted or not.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.Physics2D.gravity">
       <summary>
         <para>Acceleration due to gravity.</para>
@@ -33648,16 +32151,6 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
       </summary>
     </member>
     <member name="P:UnityEngine.Physics2D.queriesStartInColliders">
-      <summary>
-        <para>Do ray/line casts that start inside a collider(s) detect those collider(s)?</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Physics2D.raycastsHitTriggers">
-      <summary>
-        <para>Do raycasts detect Colliders configured as triggers?</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Physics2D.raycastsStartInColliders">
       <summary>
         <para>Do ray/line casts that start inside a collider(s) detect those collider(s)?</para>
       </summary>
@@ -34245,29 +32738,9 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
         <para>Applies "platform" behaviour such as one-way collisions etc.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.PlatformEffector2D.oneWay">
-      <summary>
-        <para>Whether to use one-way collision behaviour or not.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.PlatformEffector2D.sideAngleVariance">
-      <summary>
-        <para>The angle variance centered on the sides of the platform.  Zero angle only matches sides 90-degree to the platform "top".</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.PlatformEffector2D.sideArc">
       <summary>
         <para>The angle of an arc that defines the sides of the platform centered on the local 'left' and 'right' of the effector. Any collision normals within this arc are considered for the 'side' behaviours.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.PlatformEffector2D.sideBounce">
-      <summary>
-        <para>Whether bounce should be used on the platform sides or not.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.PlatformEffector2D.sideFriction">
-      <summary>
-        <para>Whether friction should be used on the platform sides or not.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.PlatformEffector2D.surfaceArc">
@@ -39175,19 +37648,6 @@ Updating a probe's cubemap is a costly operation. Unity needs to render the enti
       </summary>
       <param name="path">Pathname of the target folder. When using the empty string (i.e., ""), the function will load the entire contents of the Resources folder.</param>
     </member>
-    <member name="M:UnityEngine.Resources.LoadAssetAtPath(System.String,System.Type)">
-      <summary>
-        <para>Returns a resource at an asset path (Editor Only).</para>
-      </summary>
-      <param name="assetPath">Pathname of the target asset.</param>
-      <param name="type">Type filter for objects returned.</param>
-    </member>
-    <member name="M:UnityEngine.Resources.LoadAssetAtPath(System.String)">
-      <summary>
-        <para>Returns a resource at an asset path (Editor Only).</para>
-      </summary>
-      <param name="assetPath">Pathname of the target asset.</param>
-    </member>
     <member name="M:UnityEngine.Resources.LoadAsync(System.String)">
       <summary>
         <para>Asynchronously loads an asset stored at path in a Resources folder.</para>
@@ -40230,118 +38690,6 @@ Updating a probe's cubemap is a costly operation. Unity needs to render the enti
         <para>In the player on Xbox One.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.SamsungTV">
-      <summary>
-        <para>Interface into SamsungTV specific functionality.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.airMouseConnected">
-      <summary>
-        <para>Returns true if there is an air mouse available.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.gamePadMode">
-      <summary>
-        <para>Changes the type of input the gamepad produces.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.gestureMode">
-      <summary>
-        <para>Changes the type of input the gesture camera produces.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.gestureWorking">
-      <summary>
-        <para>Returns true if the camera sees a hand.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.touchPadMode">
-      <summary>
-        <para>The type of input the remote's touch pad produces.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.SamsungTV.GamePadMode">
-      <summary>
-        <para>Types of input the gamepad can produce.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.GamePadMode.Default">
-      <summary>
-        <para>Joystick style input.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.GamePadMode.Mouse">
-      <summary>
-        <para>Mouse style input.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.SamsungTV.GestureMode">
-      <summary>
-        <para>Types of input the gesture camera can produce.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.GestureMode.Joystick">
-      <summary>
-        <para>Two hands control two joystick axes.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.GestureMode.Mouse">
-      <summary>
-        <para>Hands control the mouse pointer.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.GestureMode.Off">
-      <summary>
-        <para>No gesture input from the camera.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.SamsungTV.OpenAPI">
-      <summary>
-        <para>Access to TV specific information.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.OpenAPI.serverType">
-      <summary>
-        <para>The server type. Possible values:
-Developing, Development, Invalid, Operating.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.OpenAPI.timeOnTV">
-      <summary>
-        <para>Get local time on TV.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SamsungTV.OpenAPI.uid">
-      <summary>
-        <para>Get UID from TV.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.SamsungTV.SetSystemLanguage(UnityEngine.SystemLanguage)">
-      <summary>
-        <para>Set the system language that is returned by Application.SystemLanguage.</para>
-      </summary>
-      <param name="language"></param>
-    </member>
-    <member name="T:UnityEngine.SamsungTV.TouchPadMode">
-      <summary>
-        <para>Types of input the remote's touchpad can produce.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.TouchPadMode.Dpad">
-      <summary>
-        <para>Remote dependent. On 2013 TVs dpad directions are determined by swiping in the correlating direction. On 2014 and 2015 TVs the remote has dpad buttons.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.TouchPadMode.Joystick">
-      <summary>
-        <para>Touchpad works like an analog joystick. Not supported on the 2015 TV as there is no touchpad.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.SamsungTV.TouchPadMode.Mouse">
-      <summary>
-        <para>Touchpad controls a remote curosr like a laptop's touchpad. This can be replaced by airmouse functionality which is available on 2014 and 2015 TVs.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.ScaleMode">
       <summary>
         <para>Scaling mode to draw textures with.</para>
@@ -40668,11 +39016,6 @@ It is required that the GameObject is at the root of its current scene.</para>
         <para>All fullscreen resolutions supported by the monitor (Read Only).</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.Screen.showCursor">
-      <summary>
-        <para>Should the cursor be visible?</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.Screen.sleepTimeout">
       <summary>
         <para>A power saving setting, allowing the screen to dim some time after the last active user interaction.</para>
@@ -40773,15 +39116,6 @@ It is required that the GameObject is at the root of its current scene.</para>
       <summary>
         <para>Webplayer security related class. Note supported from 5.4.0.</para>
       </summary>
-    </member>
-    <member name="M:UnityEngine.Security.GetChainOfTrustValue(System.String)">
-      <summary>
-        <para>Get secret from Chain of Trust system.</para>
-      </summary>
-      <param name="name">The name of the secret.</param>
-      <returns>
-        <para>The secret.</para>
-      </returns>
     </member>
     <member name="M:UnityEngine.Security.LoadAndVerifyAssembly(System.Byte[],System.String)">
       <summary>
@@ -43096,11 +41430,6 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
         <para>The active terrains in the scene.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.Terrain.bakeLightProbesForTrees">
-      <summary>
-        <para>Specifies if an array of internal light probes should be baked for terrain trees. Available only in editor.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.Terrain.basemapDistance">
       <summary>
         <para>Heightmap patches beyond basemap distance will use a precomputed low res basemap.</para>
@@ -44440,26 +42769,6 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
       <param name="colors">The colors to set the pixels to.</param>
       <param name="miplevel">The mipmap level to be affected by the new colors.</param>
     </member>
-    <member name="T:UnityEngine.TextureCompressionQuality">
-      <summary>
-        <para>Compression Quality.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TextureCompressionQuality.Best">
-      <summary>
-        <para>Best compression.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TextureCompressionQuality.Fast">
-      <summary>
-        <para>Fast compression.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TextureCompressionQuality.Normal">
-      <summary>
-        <para>Normal compression (default).</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.TextureFormat">
       <summary>
         <para>Format used when creating textures from scripts.</para>
@@ -44815,51 +43124,6 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
         <para>The timeScale-independant time at the beginning of this frame (Read Only). This is the time in seconds since the start of the game.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.Tizen.Window">
-      <summary>
-        <para>Interface into Tizen specific functionality.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Tizen.Window.evasGL">
-      <summary>
-        <para>Get pointer to the Tizen EvasGL object..</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Tizen.Window.windowHandle">
-      <summary>
-        <para>Get pointer to the native window handle.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.TizenActivityIndicatorStyle">
-      <summary>
-        <para>Enumerator list of different indicator styles used on Handheld.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TizenActivityIndicatorStyle.DontShow">
-      <summary>
-        <para>Sets your game to not show any indicator while loading.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TizenActivityIndicatorStyle.InversedLarge">
-      <summary>
-        <para>The loading indicator size is large and rotates counterclockwise (progress_large and inverted).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TizenActivityIndicatorStyle.InversedSmall">
-      <summary>
-        <para>The loading indicator size is small and rotates counterclockwise (process_small and inverted).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TizenActivityIndicatorStyle.Large">
-      <summary>
-        <para>The loading indicator size is large and rotates clockwise (progress_large).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.TizenActivityIndicatorStyle.Small">
-      <summary>
-        <para>The loading indicator size is small and rotates clockwise (process_small).</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.TooltipAttribute">
       <summary>
         <para>Specify a tooltip for a field.</para>
@@ -44991,11 +43255,6 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
         <para>Is the keyboard visible or sliding into the position on the screen?</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.TouchScreenKeyboard.area">
-      <summary>
-        <para>Returns portion of the screen which is covered by the keyboard.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.TouchScreenKeyboard.done">
       <summary>
         <para>Specifies if input process was finished. (Read Only)</para>
@@ -45011,19 +43270,9 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
         <para>Is touch screen keyboard supported.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.TouchScreenKeyboard.targetDisplay">
-      <summary>
-        <para>Specified on which display the software keyboard will appear.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.TouchScreenKeyboard.text">
       <summary>
         <para>Returns the text displayed by the input field of the keyboard.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.TouchScreenKeyboard.visible">
-      <summary>
-        <para>Returns true whenever any keyboard is completely visible on the screen.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.TouchScreenKeyboard.wasCanceled">
@@ -47004,11 +45253,6 @@ Useful for restarting a trail from a new position.</para>
         <para>Returns if the camera is currently playing.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.WebCamTexture.isReadable">
-      <summary>
-        <para>Returns if the WebCamTexture is non-readable. (iOS only).</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.WebCamTexture.requestedFPS">
       <summary>
         <para>Set the requested frame rate of the camera device (in frames per second).</para>
@@ -47120,11 +45364,6 @@ Useful for restarting a trail from a new position.</para>
         <para>Returns the pixels data in raw format.</para>
       </summary>
       <param name="colors">Optional array to receive pixel data.</param>
-    </member>
-    <member name="M:UnityEngine.WebCamTexture.MarkNonReadable">
-      <summary>
-        <para>Marks WebCamTexture as unreadable (no GetPixel* functions will be available (iOS only)).</para>
-      </summary>
     </member>
     <member name="M:UnityEngine.WebCamTexture.Pause">
       <summary>
@@ -47884,556 +46123,6 @@ The GrammarRecognizer uses Extensible Markup Language (XML) elements and attribu
       <summary>
         <para>When time reaches the end of the animation clip, time will ping pong back between beginning and end.</para>
       </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.AppCallbackItem">
-      <summary>
-        <para>Delegate that can be invoked on specific thread.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.Application">
-      <summary>
-        <para>Provides essential methods related to Window Store application.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Application.advertisingIdentifier">
-      <summary>
-        <para>Advertising ID.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Application.arguments">
-      <summary>
-        <para>Arguments passed to application.</para>
-      </summary>
-    </member>
-    <member name="?:UnityEngine.WSA.Application.windowActivated(UnityEngine.WSA.WindowActivated)">
-      <summary>
-        <para>Fired when application window is activated.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.WSA.Application.windowSizeChanged(UnityEngine.WSA.WindowSizeChanged)">
-      <summary>
-        <para>Fired when window size changes.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="M:UnityEngine.WSA.Application.InvokeOnAppThread(UnityEngine.WSA.AppCallbackItem,System.Boolean)">
-      <summary>
-        <para>Executes callback item on application thread.</para>
-      </summary>
-      <param name="item">Item to execute.</param>
-      <param name="waitUntilDone">Wait until item is executed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Application.InvokeOnUIThread(UnityEngine.WSA.AppCallbackItem,System.Boolean)">
-      <summary>
-        <para>Executes callback item on UI thread.</para>
-      </summary>
-      <param name="item">Item to execute.</param>
-      <param name="waitUntilDone">Wait until item is executed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Application.RunningOnAppThread">
-      <summary>
-        <para>Returns true if you're running on application thread.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Application.RunningOnUIThread">
-      <summary>
-        <para>Returns true if you're running on UI thread.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Application.TryInvokeOnAppThread(UnityEngine.WSA.AppCallbackItem,System.Boolean)">
-      <summary>
-        <para>[OBSOLETE] Tries to execute callback item on application thread.</para>
-      </summary>
-      <param name="item">Item to execute.</param>
-      <param name="waitUntilDone">Wait until item is executed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Application.TryInvokeOnUIThread(UnityEngine.WSA.AppCallbackItem,System.Boolean)">
-      <summary>
-        <para>[OBSOLETE] Tries to execute callback item on UI thread.</para>
-      </summary>
-      <param name="item">Item to execute.</param>
-      <param name="waitUntilDone">Wait until item is executed.</param>
-    </member>
-    <member name="T:UnityEngine.WSA.Cursor">
-      <summary>
-        <para>Cursor API for Windows Store Apps.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Cursor.SetCustomCursor(System.UInt32)">
-      <summary>
-        <para>Set a custom cursor.</para>
-      </summary>
-      <param name="id">The cursor resource id.</param>
-    </member>
-    <member name="T:UnityEngine.WSA.Folder">
-      <summary>
-        <para>List of accessible folders on Windows Store Apps.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.Launcher">
-      <summary>
-        <para>Class which is capable of launching user's default app for file type or a protocol. See also PlayerSettings where you can specify file or URI associations.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Launcher.LaunchFile(UnityEngine.WSA.Folder,System.String,System.Boolean)">
-      <summary>
-        <para>Launches the default app associated with specified file.</para>
-      </summary>
-      <param name="folder">Folder type where the file is located.</param>
-      <param name="relativeFilePath">Relative file path inside the specified folder.</param>
-      <param name="showWarning">Shows user a warning that application will be switched.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Launcher.LaunchFileWithPicker(System.String)">
-      <summary>
-        <para>Opens a dialog for picking the file.</para>
-      </summary>
-      <param name="fileExtension">File extension.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Launcher.LaunchUri(System.String,System.Boolean)">
-      <summary>
-        <para>Starts the default app associated with the URI scheme name for the specified URI, using the specified options.</para>
-      </summary>
-      <param name="uri">The URI.</param>
-      <param name="showWarning">Displays a warning that the URI is potentially unsafe.</param>
-    </member>
-    <member name="T:UnityEngine.WSA.SecondaryTileData">
-      <summary>
-        <para>Defines the default look of secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.arguments">
-      <summary>
-        <para>Arguments to be passed for application when secondary tile is activated.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.SecondaryTileData.backgroundColor">
-      <summary>
-        <para>Defines background color for secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.backgroundColorSet">
-      <summary>
-        <para>Defines, whether backgroundColor should be used.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.displayName">
-      <summary>
-        <para>Display name for secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.foregroundText">
-      <summary>
-        <para>Defines the style for foreground text on a secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.lockScreenBadgeLogo">
-      <summary>
-        <para>Uri to logo, shown for secondary tile on lock screen.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.lockScreenDisplayBadgeAndTileText">
-      <summary>
-        <para>Whether to show secondary tile on lock screen.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.phoneticName">
-      <summary>
-        <para>Phonetic name for secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.roamingEnabled">
-      <summary>
-        <para>Defines whether secondary tile is copied to another device when application is installed by the same users account.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.showNameOnSquare150x150Logo">
-      <summary>
-        <para>Defines whether the displayName should be shown on a medium secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.showNameOnSquare310x310Logo">
-      <summary>
-        <para>Defines whether the displayName should be shown on a large secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.showNameOnWide310x150Logo">
-      <summary>
-        <para>Defines whether the displayName should be shown on a wide secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.square150x150Logo">
-      <summary>
-        <para>Uri to the logo for medium size tile.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.square30x30Logo">
-      <summary>
-        <para>Uri to the logo shown on tile
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.square310x310Logo">
-      <summary>
-        <para>Uri to the logo for large size tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.square70x70Logo">
-      <summary>
-        <para>Uri to the logo for small size tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.tileId">
-      <summary>
-        <para>Unique identifier within application for a secondary tile.
-</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.SecondaryTileData.wide310x150Logo">
-      <summary>
-        <para>Uri to the logo for wide tile.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.SecondaryTileData.#ctor(System.String,System.String)">
-      <summary>
-        <para>Constructor for SecondaryTileData, sets default values for all members.</para>
-      </summary>
-      <param name="id">Unique identifier for secondary tile.</param>
-      <param name="displayName">A display name for a tile.</param>
-    </member>
-    <member name="T:UnityEngine.WSA.Tile">
-      <summary>
-        <para>Represents tile on Windows start screen
-</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Tile.exists">
-      <summary>
-        <para>Whether secondary tile is pinned to start screen.
-</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Tile.hasUserConsent">
-      <summary>
-        <para>Whether secondary tile was approved (pinned to start screen) or rejected by user.
-</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Tile.id">
-      <summary>
-        <para>A unique string, identifying secondary tile</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Tile.main">
-      <summary>
-        <para>Returns applications main tile
-</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.CreateOrUpdateSecondary(UnityEngine.WSA.SecondaryTileData)">
-      <summary>
-        <para>Creates new or updates existing secondary tile.</para>
-      </summary>
-      <param name="data">The data used to create or update secondary tile.</param>
-      <param name="pos">The coordinates for a request to create new tile.</param>
-      <param name="area">The area on the screen above which the request to create new tile will be displayed.</param>
-      <returns>
-        <para>New Tile object, that can be used for further work with the tile.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.CreateOrUpdateSecondary(UnityEngine.WSA.SecondaryTileData,UnityEngine.Vector2)">
-      <summary>
-        <para>Creates new or updates existing secondary tile.</para>
-      </summary>
-      <param name="data">The data used to create or update secondary tile.</param>
-      <param name="pos">The coordinates for a request to create new tile.</param>
-      <param name="area">The area on the screen above which the request to create new tile will be displayed.</param>
-      <returns>
-        <para>New Tile object, that can be used for further work with the tile.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.CreateOrUpdateSecondary(UnityEngine.WSA.SecondaryTileData,UnityEngine.Rect)">
-      <summary>
-        <para>Creates new or updates existing secondary tile.</para>
-      </summary>
-      <param name="data">The data used to create or update secondary tile.</param>
-      <param name="pos">The coordinates for a request to create new tile.</param>
-      <param name="area">The area on the screen above which the request to create new tile will be displayed.</param>
-      <returns>
-        <para>New Tile object, that can be used for further work with the tile.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.Delete">
-      <summary>
-        <para>Show a request to unpin secondary tile from start screen.</para>
-      </summary>
-      <param name="pos">The coordinates for a request to unpin tile.</param>
-      <param name="area">The area on the screen above which the request to unpin tile will be displayed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.Delete(UnityEngine.Vector2)">
-      <summary>
-        <para>Show a request to unpin secondary tile from start screen.</para>
-      </summary>
-      <param name="pos">The coordinates for a request to unpin tile.</param>
-      <param name="area">The area on the screen above which the request to unpin tile will be displayed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.Delete(UnityEngine.Rect)">
-      <summary>
-        <para>Show a request to unpin secondary tile from start screen.</para>
-      </summary>
-      <param name="pos">The coordinates for a request to unpin tile.</param>
-      <param name="area">The area on the screen above which the request to unpin tile will be displayed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.DeleteSecondary(System.String)">
-      <summary>
-        <para>Show a request to unpin secondary tile from start screen.</para>
-      </summary>
-      <param name="tileId">An identifier for secondary tile.</param>
-      <param name="pos">The coordinates for a request to unpin tile.</param>
-      <param name="area">The area on the screen above which the request to unpin tile will be displayed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.DeleteSecondary(System.String,UnityEngine.Vector2)">
-      <summary>
-        <para>Show a request to unpin secondary tile from start screen.</para>
-      </summary>
-      <param name="tileId">An identifier for secondary tile.</param>
-      <param name="pos">The coordinates for a request to unpin tile.</param>
-      <param name="area">The area on the screen above which the request to unpin tile will be displayed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.DeleteSecondary(System.String,UnityEngine.Rect)">
-      <summary>
-        <para>Show a request to unpin secondary tile from start screen.</para>
-      </summary>
-      <param name="tileId">An identifier for secondary tile.</param>
-      <param name="pos">The coordinates for a request to unpin tile.</param>
-      <param name="area">The area on the screen above which the request to unpin tile will be displayed.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.Exists(System.String)">
-      <summary>
-        <para>Whether secondary tile is pinned to start screen.</para>
-      </summary>
-      <param name="tileId">An identifier for secondary tile.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.GetSecondaries">
-      <summary>
-        <para>Gets all secondary tiles.</para>
-      </summary>
-      <returns>
-        <para>An array of Tile objects.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.GetSecondary(System.String)">
-      <summary>
-        <para>Returns the secondary tile, identified by tile id.</para>
-      </summary>
-      <param name="tileId">A tile identifier.</param>
-      <returns>
-        <para>A Tile object or null if secondary tile does not exist (not pinned to start screen and user request is complete).</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.GetTemplate(UnityEngine.WSA.TileTemplate)">
-      <summary>
-        <para>Get template XML for tile notification.</para>
-      </summary>
-      <param name="templ">A template identifier.</param>
-      <returns>
-        <para>String, which is an empty XML document to be filled and used for tile notification.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.PeriodicBadgeUpdate(System.String,System.Single)">
-      <summary>
-        <para>Starts periodic update of a  badge on a tile.
-</para>
-      </summary>
-      <param name="uri">A remote location from where to retrieve tile update</param>
-      <param name="interval">A time interval in minutes, will be rounded to a value, supported by the system</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.PeriodicUpdate(System.String,System.Single)">
-      <summary>
-        <para>Starts periodic update of a tile.
-</para>
-      </summary>
-      <param name="uri">a remote location fromwhere to retrieve tile update</param>
-      <param name="interval">a time interval in minutes, will be rounded to a value, supported by the system</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.RemoveBadge">
-      <summary>
-        <para>Remove badge from tile.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.StopPeriodicBadgeUpdate">
-      <summary>
-        <para>Stops previously started periodic update of a tile.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.StopPeriodicUpdate">
-      <summary>
-        <para>Stops previously started periodic update of a tile.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.Update(System.String)">
-      <summary>
-        <para>Send a notification for tile (update tiles look).</para>
-      </summary>
-      <param name="xml">A string containing XML document for new tile look.</param>
-      <param name="medium">An uri to 150x150 image, shown on medium tile.</param>
-      <param name="wide">An uri to a 310x150 image to be shown on a wide tile (if such issupported).</param>
-      <param name="large">An uri to a 310x310 image to be shown on a large tile (if such is supported).</param>
-      <param name="text">A text to shown on a tile.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.Update(System.String,System.String,System.String,System.String)">
-      <summary>
-        <para>Send a notification for tile (update tiles look).</para>
-      </summary>
-      <param name="xml">A string containing XML document for new tile look.</param>
-      <param name="medium">An uri to 150x150 image, shown on medium tile.</param>
-      <param name="wide">An uri to a 310x150 image to be shown on a wide tile (if such issupported).</param>
-      <param name="large">An uri to a 310x310 image to be shown on a large tile (if such is supported).</param>
-      <param name="text">A text to shown on a tile.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.UpdateBadgeImage(System.String)">
-      <summary>
-        <para>Sets or updates badge on a tile to an image.</para>
-      </summary>
-      <param name="image">Image identifier.</param>
-    </member>
-    <member name="M:UnityEngine.WSA.Tile.UpdateBadgeNumber(System.Single)">
-      <summary>
-        <para>Set or update a badge on a tile to a number.</para>
-      </summary>
-      <param name="number">Number to be shown on a badge.</param>
-    </member>
-    <member name="T:UnityEngine.WSA.TileForegroundText">
-      <summary>
-        <para>Style for foreground text on a secondary tile.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.TileTemplate">
-      <summary>
-        <para>Templates for various tile styles.
-</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.Toast">
-      <summary>
-        <para>Represents a toast notification in Windows Store Apps.
-</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Toast.activated">
-      <summary>
-        <para>true if toast was activated by user.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Toast.arguments">
-      <summary>
-        <para>Arguments to be passed for application when toast notification is activated.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Toast.dismissed">
-      <summary>
-        <para>true if toast notification was dismissed (for any reason).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.WSA.Toast.dismissedByUser">
-      <summary>
-        <para>true if toast notification was explicitly dismissed by user.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Toast.Create(System.String)">
-      <summary>
-        <para>Create toast notification.</para>
-      </summary>
-      <param name="xml">XML document with tile data.</param>
-      <param name="image">Uri to image to show on a toast, can be empty, in that case text-only notification will be shown.</param>
-      <param name="text">A text to display on a toast notification.</param>
-      <returns>
-        <para>A toast object for further work with created notification or null, if creation of toast failed.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Toast.Create(System.String,System.String)">
-      <summary>
-        <para>Create toast notification.</para>
-      </summary>
-      <param name="xml">XML document with tile data.</param>
-      <param name="image">Uri to image to show on a toast, can be empty, in that case text-only notification will be shown.</param>
-      <param name="text">A text to display on a toast notification.</param>
-      <returns>
-        <para>A toast object for further work with created notification or null, if creation of toast failed.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Toast.GetTemplate(UnityEngine.WSA.ToastTemplate)">
-      <summary>
-        <para>Get template XML for toast notification.
-</para>
-      </summary>
-      <param name="templ">A template identifier.</param>
-      <returns>
-        <para>string, which is an empty XML document to be filled and used for toast notification.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.WSA.Toast.Hide">
-      <summary>
-        <para>Hide displayed toast notification.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.WSA.Toast.Show">
-      <summary>
-        <para>Show toast notification.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.ToastTemplate">
-      <summary>
-        <para>Templates for various toast styles.
-</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.WindowActivated">
-      <summary>
-        <para>This event occurs when window completes activation or deactivation, it also fires up when you snap and unsnap the application.</para>
-      </summary>
-      <param name="state"></param>
-    </member>
-    <member name="T:UnityEngine.WSA.WindowActivationState">
-      <summary>
-        <para>Specifies the set of reasons that a windowActivated event was raised.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.WindowActivationState.CodeActivated">
-      <summary>
-        <para>The window was activated.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.WindowActivationState.Deactivated">
-      <summary>
-        <para>The window was deactivated.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.WSA.WindowActivationState.PointerActivated">
-      <summary>
-        <para>The window was activated by pointer interaction.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.WSA.WindowSizeChanged">
-      <summary>
-        <para>This event occurs when window rendering size changes.</para>
-      </summary>
-      <param name="width"></param>
-      <param name="height"></param>
     </member>
     <member name="T:UnityEngine.WWW">
       <summary>
