@@ -17,20 +17,18 @@ namespace plugin_PluginLoaderMenu
 
         void OnGUI()
         {
-            if (showmenu)
+            if (!showmenu) return;
+            GUILayout.BeginArea(new Rect(140, Screen.height - 50, Screen.width - 300, 120));
+            GUILayout.BeginVertical();
+            GUILayout.Label("Plugin Loader Menu");
+            foreach (var plugin in GetPluginList(Path.GetFullPath(Path.Combine(Application.dataPath, "Managed"))))
             {
-                GUILayout.BeginArea(new Rect(140, Screen.height - 50, Screen.width - 300, 120));
-                GUILayout.BeginVertical();
-                GUILayout.Label("Plugin Loader Menu");
-                foreach (var plugin in GetPluginList(Path.GetFullPath(Path.Combine(Application.dataPath, "Managed"))))
+                if (GUILayout.Button(plugin.Name))
                 {
-                    if (GUILayout.Button(plugin.Name))
-                    {
-                        plugin.initPlugin();
-                    }
+                    plugin.initPlugin();
                 }
-                GUILayout.EndArea();
             }
+            GUILayout.EndArea();
         }
     }
 }
